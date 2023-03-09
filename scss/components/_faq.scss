@@ -1,0 +1,40 @@
+.faq {
+  padding: 15rem 0;
+  background-image: url("/img/faq/faq_bg.svg");
+  background-repeat: no-repeat;
+  // background-size: contain;
+
+  &__container {
+    background-color: $white;
+    box-shadow: 5px 10px 10px #00000017;
+    border-radius: 1.5rem;
+    margin-top: 5rem;
+    max-width: 80vw;
+    margin: 5rem auto;
+  }
+}
+
+.panel {
+  padding: 0 5rem;
+  display: none;
+  color: #8f8f8f;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+
+.accordion {
+  background-color: $white;
+  cursor: pointer;
+  padding: 3rem 5rem;
+  width: 100%;
+  display: block;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 2rem;
+  transition: 0.4s;
+
+  &:not(:first-child) {
+    border-top: 2px solid #00000017;
+  }
+}

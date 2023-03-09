@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: $blue-background;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 9px 10px 20px #00000021;
+  border-radius: 1rem;
+
+  &-lnk {
+    color: $white;
+    font-size: 2rem;
+  }
+}

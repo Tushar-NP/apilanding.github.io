@@ -1,0 +1,27 @@
+.carousel {
+  width: 90%;
+  overflow-x: scroll;
+  display: flex;
+  gap: 2.4rem;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__btn {
+    position: absolute;
+    background: none;
+
+    &--left {
+      left: 10%;
+      top: 40%;
+    }
+    &--right {
+      top: 40%;
+      right: 10%;
+    }
+  }
+}
