@@ -1,27 +1,36 @@
 .carousel {
-  width: 90%;
+  max-width: 90%;
   overflow-x: scroll;
   display: flex;
   gap: 2.4rem;
   scroll-behavior: smooth;
   margin: 0 auto;
   margin-bottom: 4rem;
+  position: relative;
 
   &::-webkit-scrollbar {
     display: none;
   }
 
   &__btn {
-    position: absolute;
     background: none;
+    font-size: 2rem;
 
     &--left {
-      left: 10%;
-      top: 40%;
+      padding-left: 20px;
     }
     &--right {
-      top: 40%;
-      right: 10%;
+      padding-right: 20px;
     }
   }
+
+  @include respond(phone) {
+    padding: 0 20px;
+    margin: 0;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
 }

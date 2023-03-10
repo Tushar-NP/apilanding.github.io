@@ -2,7 +2,7 @@
   padding: 50px;
 
   @include respond(phone) {
-    padding: 30px 5px;
+    padding: 50px 20px;
   }
 
   &__cart {
@@ -22,9 +22,11 @@
     padding: 20px 10px;
     border-radius: 15px;
     min-width: 20rem;
+    transition: all 0.5s linear;
 
     &:hover {
       box-shadow: 9px 10px 20px #00000021;
+      animation: cart-animation 0.5s ease-out alternate;
     }
   }
 

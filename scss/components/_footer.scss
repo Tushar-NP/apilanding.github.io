@@ -4,15 +4,14 @@
   &_top {
     display: flex;
     justify-content: center;
-    // gap: 2rem;
     background-color: $footer-top;
     padding: 2rem;
     flex-wrap: wrap;
     cursor: pointer;
 
     @include respond(phone) {
-      justify-content: space-between;
-      //   gap: 0;
+      justify-content: center;
+      padding: 20px 5px;
     }
 
     &-link {
@@ -26,6 +25,10 @@
           padding: 1rem;
         }
       }
+
+      @include respond(phone) {
+        font-size: 1.3rem;
+      }
     }
   }
 
@@ -35,6 +38,10 @@
     max-width: 30rem;
     padding-top: 10rem;
     margin: auto;
+
+    @include respond(phone) {
+      padding-top: 20px;
+    }
   }
 
   &__container {
@@ -49,19 +56,12 @@
     }
     &-img {
       position: relative;
+
       @include respond(phone) {
         max-width: 30%;
         gap: 0;
+        padding: 0 20px;
       }
-    }
-    &-img::before {
-      content: "a";
-      height: 5rem;
-      width: 2rem;
-      background-color: $white;
-      position: absolute;
-      top: 0;
-      right: 0;
     }
   }
 }

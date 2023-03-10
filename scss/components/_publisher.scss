@@ -1,7 +1,11 @@
 .publisher {
-  padding: 10rem 0;
+  padding: 100px 0;
   background-color: $blue-background;
   text-align: center;
+
+  @include respond(phone) {
+    padding: 50px 20px;
+  }
 
   &-text {
     max-width: 60rem;
@@ -35,14 +39,5 @@
       margin-top: 2rem;
       font-size: 1.2rem;
     }
-  }
-}
-
-@keyframes cart-animation {
-  0% {
-    transform: scale(0.7);
-  }
-  100% {
-    transform: scale(1);
   }
 }

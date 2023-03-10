@@ -2,8 +2,12 @@
   padding: 15rem 0;
   background-image: url("/img/faq/faq_bg.svg");
   background-repeat: no-repeat;
-  // background-size: contain;
+  @include respond(phone) {
+    padding: 5rem 2rem;
+  }
 
+  &-text {
+  }
   &__container {
     background-color: $white;
     box-shadow: 5px 10px 10px #00000017;
@@ -15,26 +19,44 @@
 }
 
 .panel {
-  padding: 0 5rem;
+  padding: 0 8rem;
   display: none;
   color: #8f8f8f;
   line-height: 2;
   font-size: 1.6rem;
+  @include respond(phone) {
+    padding: 0 0.5rem;
+  }
 }
 
 .accordion {
-  background-color: $white;
-  cursor: pointer;
-  padding: 3rem 5rem;
-  width: 100%;
-  display: block;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 2rem;
-  transition: 0.4s;
+  display: flex;
+  align-items: center;
+
+  &-btn {
+    background-color: $white;
+    cursor: pointer;
+    padding: 3rem 1rem;
+    width: 80%;
+    display: block;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2rem;
+    transition: 0.4s;
+    position: relative;
+  }
 
   &:not(:first-child) {
     border-top: 2px solid #00000017;
+  }
+}
+
+.plus {
+  font-size: 1.5rem;
+  padding: 2rem 2rem;
+
+  @include respond(phone) {
+    padding: 2rem 0.5rem;
   }
 }
