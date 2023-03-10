@@ -516,6 +516,7 @@ html {
   border-radius: 15px;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1607843137);
   transition: all 0.9s linear;
+  cursor: pointer;
 }
 .publisher__cart:hover {
   animation: cart-animation 0.9s ease-out infinite alternate;
@@ -541,6 +542,7 @@ html {
   border-radius: 15px;
   min-width: 20rem;
   transition: all 0.5s linear;
+  cursor: pointer;
 }
 .about__cart-container {
   margin-top: 40px;
